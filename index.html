@@ -4,9 +4,170 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Moja strona</title>
+  <meta name="description" content="Nowoczesna, estetyczna strona startowa pod GitHub Pages." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>MorWis </h1>
-  <p>MORWIS</p>
+  <div class="background-glow glow-1"></div>
+  <div class="background-glow glow-2"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="logo">✨ MojaStrona</a>
+      <nav>
+        <a href="#o-mnie">O mnie</a>
+        <a href="#oferta">Oferta</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-text">
+        <span class="pill">Nowoczesna strona na GitHub Pages</span>
+        <h1>Prosty start, <span>ładniejszy wygląd</span> i lepsze pierwsze wrażenie</h1>
+        <p>
+          Ten szablon daje Ci estetyczną stronę startową z sekcją o Tobie, ofertą
+          i przyciskiem kontaktowym. Wystarczy wrzucić pliki do repozytorium.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#kontakt">Skontaktuj się</a>
+          <a class="btn btn-secondary" href="#oferta">Zobacz ofertę</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat-card">
+            <strong>100%</strong>
+            <span>statyczna strona</span>
+          </div>
+          <div class="stat-card">
+            <strong>3 pliki</strong>
+            <span>łatwe do edycji</span>
+          </div>
+          <div class="stat-card">
+            <strong>GitHub Pages</strong>
+            <span>proste wdrożenie</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="glass-card">
+          <div class="card-top">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="code-lines">
+            <div class="line w-80"></div>
+            <div class="line w-60"></div>
+            <div class="line w-90"></div>
+            <div class="line w-50"></div>
+          </div>
+          <div class="preview-box">
+            <h3>Twoja wizytówka online</h3>
+            <p>Minimalistyczna, szybka i przyjemna w odbiorze.</p>
+            <button id="themeButton" class="small-btn">Zmień akcent</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="o-mnie" class="container section">
+      <div class="section-heading">
+        <span class="section-label">O mnie</span>
+        <h2>Kim jesteś i czym się zajmujesz</h2>
+        <p>
+          W tym miejscu wpisz kilka zdań o sobie, swojej marce albo projekcie.
+          To dobra sekcja na krótkie przedstawienie i zbudowanie zaufania.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="info-card">
+          <h3>Nowoczesny wygląd</h3>
+          <p>Delikatne cienie, gradienty i czytelna typografia sprawiają, że strona wygląda bardziej profesjonalnie.</p>
+        </article>
+        <article class="info-card">
+          <h3>Responsywność</h3>
+          <p>Układ dobrze działa zarówno na komputerze, jak i na telefonie.</p>
+        </article>
+        <article class="info-card">
+          <h3>Łatwa edycja</h3>
+          <p>Możesz zmieniać teksty, kolory i sekcje bez skomplikowanych narzędzi.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="oferta" class="container section">
+      <div class="section-heading">
+        <span class="section-label">Oferta</span>
+        <h2>Co możesz tutaj pokazać</h2>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="price-card featured">
+          <p class="plan">Start</p>
+          <h3>Prosta wizytówka</h3>
+          <p class="price">Idealna na początek</p>
+          <ul>
+            <li>strona główna</li>
+            <li>sekcja o Tobie</li>
+            <li>formularz lub kontakt</li>
+          </ul>
+        </article>
+
+        <article class="price-card">
+          <p class="plan">Portfolio</p>
+          <h3>Prezentacja projektów</h3>
+          <p class="price">Dla freelancera lub twórcy</p>
+          <ul>
+            <li>galeria realizacji</li>
+            <li>opis usług</li>
+            <li>linki do social mediów</li>
+          </ul>
+        </article>
+
+        <article class="price-card">
+          <p class="plan">Projekt</p>
+          <h3>Strona produktu</h3>
+          <p class="price">Dla aplikacji lub pomysłu</p>
+          <ul>
+            <li>opis funkcji</li>
+            <li>sekcja FAQ</li>
+            <li>wezwanie do działania</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="kontakt" class="container section">
+      <div class="contact-box">
+        <div>
+          <span class="section-label">Kontakt</span>
+          <h2>Dodaj tutaj swój e-mail lub linki</h2>
+          <p>
+            Zmień ten tekst na swoje dane kontaktowe, np. adres e-mail, numer telefonu
+            albo link do LinkedIna czy GitHuba.
+          </p>
+        </div>
+        <a class="btn btn-primary" href="mailto:twojmail@example.com">Napisz do mnie</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 MojaStrona. Wykonane z myślą o GitHub Pages.</p>
+      <a href="#">Do góry ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
